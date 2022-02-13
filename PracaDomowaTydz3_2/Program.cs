@@ -23,14 +23,15 @@ namespace PracaDomowaTydz3_2
 
         static void Main(string[] args)
         {
-            var randomValue = new Random().Next(100);
+            var random = new Random();
+            var randomValue = random.Next(100);
             int userValue;
             int userTrial = 1;
 
             for (int i = 0; i < 100; i++)
             {
-                System.Threading.Thread.Sleep(10);
-                Console.Write($" {new Random().Next(100)} ");
+                System.Threading.Thread.Sleep(5);
+                Console.Write($" {random.Next(100)} ");
             }
 
             
